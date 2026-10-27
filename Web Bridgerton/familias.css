@@ -1,0 +1,257 @@
+.families-page {
+	background-color: var(--rose);
+	font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.families-page .social-footer a {
+	font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.home-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.home-button:focus-visible {
+	outline: 2px solid var(--ink);
+	outline-offset: 4px;
+}
+
+.families-masthead {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 13px 20px 0;
+	text-align: center;
+}
+
+.families-masthead h1 {
+	margin: 0;
+	font-family: "Cormorant Garamond", Georgia, serif;
+	font-size: clamp(38px, 6.2vw, 76px);
+	font-weight: 600;
+	letter-spacing: 0.075em;
+	line-height: 1.15;
+	text-transform: uppercase;
+}
+
+.families-masthead p {
+	margin: 0 0 12px;
+	font-family: "Cormorant Garamond", Georgia, serif;
+	font-size: clamp(19px, 2.2vw, 25px);
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	line-height: 1.2;
+}
+
+.families-feature {
+	display: block;
+	width: min(78vw, 440px);
+	height: auto;
+	box-shadow: 0 3px 12px rgba(60, 35, 30, 0.16);
+}
+
+.family-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: clamp(18px, 3vw, 38px);
+	align-items: start;
+	padding: 30px clamp(22px, 4.2vw, 54px) 32px;
+}
+
+.family-card {
+	display: flex;
+	min-width: 0;
+	flex-direction: column;
+	align-items: center;
+	color: inherit;
+	text-decoration: none;
+}
+
+.family-card h2 {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	min-height: 72px;
+	margin: 0 0 14px;
+	padding: 10px 8px;
+	background: var(--gold);
+	font-family: "Cormorant Garamond", Georgia, serif;
+	font-size: clamp(17px, 2.1vw, 27px);
+	font-variant: small-caps;
+	font-weight: 700;
+	line-height: 1.08;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.family-card,
+.family-card h2,
+.family-card img {
+	transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.family-card:hover h2 {
+	background-color: #f5ca70;
+	transform: translateY(-2px);
+}
+
+.family-card:hover img {
+	transform: translateY(-2px);
+}
+
+.family-card:focus-visible {
+	outline: 2px solid var(--ink);
+	outline-offset: 4px;
+}
+
+.family-card img {
+	display: block;
+	width: min(100%, 280px);
+	height: clamp(190px, 24vw, 280px);
+	object-fit: contain;
+}
+
+.family-details {
+	width: min(100%, 1180px);
+	margin: 0 auto;
+	padding: 0 clamp(22px, 4.2vw, 54px) 42px;
+}
+
+.family-detail {
+	margin-top: 22px;
+	padding-top: 16px;
+	scroll-margin-top: 20px;
+}
+
+.family-detail > h2 {
+	margin: 0 0 18px;
+	font-family: "Cormorant Garamond", Georgia, serif;
+	font-size: clamp(30px, 4vw, 44px);
+	font-weight: 700;
+	text-align: center;
+}
+
+.character-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.character-card {
+	display: flex;
+	min-width: 0;
+	align-items: center;
+	gap: 16px;
+	padding: 14px;
+	background: rgba(255, 253, 249, 0.48);
+	transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.character-card:hover {
+	background-color: rgba(255, 253, 249, 0.72);
+	box-shadow: 0 5px 14px rgba(60, 35, 30, 0.12);
+	transform: translateY(-3px);
+}
+
+.character-card img {
+	display: block;
+	flex: 0 0 112px;
+	width: 112px;
+	height: 150px;
+	object-fit: contain;
+}
+
+.character-card h3 {
+	margin: 0 0 4px;
+	font-size: clamp(20px, 2.2vw, 25px);
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.character-card p {
+	margin: 0;
+	font-size: clamp(18px, 1.8vw, 21px);
+	line-height: 1.25;
+}
+
+@media (max-width: 760px) {
+	.families-masthead {
+		padding-top: 14px;
+	}
+
+	.families-masthead h1 {
+		font-size: clamp(32px, 8vw, 54px);
+		letter-spacing: 0.045em;
+	}
+
+	.families-masthead p {
+		max-width: 36ch;
+		margin: 4px 0 12px;
+		font-size: 19px;
+		letter-spacing: 0.01em;
+		line-height: 1.3;
+	}
+
+	.families-feature {
+		width: min(86vw, 440px);
+	}
+
+	.family-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 22px 16px;
+		padding: 24px 16px 28px;
+	}
+
+	.family-card h2 {
+		min-height: 62px;
+		margin-bottom: 10px;
+		font-size: clamp(16px, 4.3vw, 22px);
+	}
+
+	.family-card img {
+		width: min(100%, 280px);
+		height: clamp(190px, 48vw, 250px);
+	}
+
+	.family-details {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+}
+
+@media (max-width: 420px) {
+	.family-grid {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+
+	.family-card h2 {
+		width: min(100%, 320px);
+	}
+
+	.family-card img {
+		width: min(100%, 320px);
+		height: 240px;
+	}
+}
+
+@media (max-width: 560px) {
+	.character-grid {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	.character-card {
+		gap: 12px;
+		padding: 12px;
+	}
+
+	.character-card img {
+		flex-basis: 88px;
+		width: 88px;
+		height: 128px;
+	}
+}

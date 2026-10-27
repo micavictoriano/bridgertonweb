@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#eac0cc">
+        <meta name="description" content="Los secretos de la moda de la alta sociedad de Bridgerton.">
+        <title>Glamour | The Whistledown</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="./bridgerton.css">
+        <link rel="stylesheet" href="./glamour.css">
+    </head>
+    <body class="glamour-page">
+        <header class="topbar">
+            <button class="icon-button menu-button menu-toggle" type="button" aria-label="Abrir menú" aria-controls="site-menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <form class="search" role="search" action="#">
+                <label class="visually-hidden" for="site-search">Buscar en The Whistledown</label>
+                <input id="site-search" type="search" placeholder="Buscar" autocomplete="off" aria-controls="search-results" aria-expanded="false">
+                <button class="search-button" type="submit" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+                </button>
+                <div class="search-results" id="search-results" role="list" hidden></div>
+            </form>
+        </header>
+        <button class="menu-backdrop" type="button" aria-label="Cerrar menú" hidden></button>
+        <nav class="side-menu" id="site-menu" aria-label="Secciones de The Whistledown" hidden>
+            <h2>Explorar</h2>
+            <a href="./bridgerton.html">Inicio</a>
+            <a href="./lady-whistledown.html">Lady Whistledown</a>
+            <a href="./glamour.html">Glamour</a>
+            <a href="./bailes-eventos.html">Bailes y eventos</a>
+            <a href="./familias.html">Familias de The Ton</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        <main>
+            <header class="glamour-masthead">
+                <h1>Glamour</h1>
+                <p>Los secretos de la moda de la alta sociedad, al descubierto</p>
+                <img class="glamour-feature" src="./daphne%20glamour.jpg" alt="Daphne Bridgerton con un vestido de gala y antifaz">
+            </header>
+
+            <section class="glamour-sections" aria-label="Moda y estilo">
+                <a class="glamour-card" href="#accesorios">
+                    <h2>Accesorios y belleza</h2>
+                    <img src="./accesorios.jpg" alt="Abanico de encaje y guante de época">
+                </a>
+                <a class="glamour-card" href="#look-destacado">
+                    <h2>Look destacado</h2>
+                    <img src="./sophie%20mejor%20vestido.jpg" alt="Vestido de gala plateado en un jardín">
+                </a>
+                <a class="glamour-card" href="#mejores-vestidos">
+                    <h2>Mejores vestidos</h2>
+                    <img src="./vestuario.jpg" alt="Vestidos y trajes de época en una sala de vestuario">
+                </a>
+            </section>
+
+            <section class="glamour-articles" aria-label="Artículos de moda y estilo">
+                <article class="glamour-article" id="accesorios">
+                    <header class="glamour-article-heading">
+                        <p class="glamour-category">Accesorios y belleza</p>
+                        <h2>El poder de los detalles</h2>
+                    </header>
+                    <img class="glamour-article-image" src="./accesorios%20foto.jpg" alt="Peinado adornado con plumas y joyas">
+                    <div class="glamour-copy">
+                        <p>Queridos lectores, si algo sabe una dama del Ton, es que la elegancia no depende únicamente del vestido que luce, sino también de aquellos pequeños detalles que completan su apariencia.</p>
+                        <p>Perlas, guantes, abanicos, delicados collares y adornos para el cabello son mucho más que simples accesorios: cada elección puede reflejar personalidad, posición social y aspiraciones. A esto se suman los peinados cuidadosamente recogidos y el maquillaje sutil, que aportan el toque final a cada conjunto.</p>
+                        <p>Porque, en una sociedad donde las miradas nunca descansan, hasta el accesorio más discreto puede convertirse en tema de conversación. Y recuerden, estimados lectores: el verdadero estilo está en los detalles.</p>
+                    </div>
+                </article>
+
+                <article class="glamour-article" id="look-destacado">
+                    <header class="glamour-article-heading">
+                        <p class="glamour-category">Look destacado</p>
+                        <h2>Un vestido, una máscara y un misterio</h2>
+                    </header>
+                    <img class="glamour-article-image" src="./look%20destacado%20sophie.jpg" alt="Sophie Baek con su vestido plateado y máscara en el baile">
+                    <div class="glamour-copy">
+                        <p>Queridos lectores, pocas apariciones han despertado tanta curiosidad como la de Sophie Baek en el baile de máscaras de los Bridgerton. Su vestido plateado, acompañado por una delicada máscara, la convierte en la enigmática Dama de Plata y demuestra que no siempre hace falta un apellido prestigioso para captar todas las miradas.</p>
+                        <p>Lejos de los colores más llamativos de los salones, el brillo de la tela y la sencillez de los detalles construyen una imagen elegante y misteriosa. El conjunto acompaña a una joven que, por una noche, consigue escapar de las barreras que su posición social le impone.</p>
+                        <p>Y es que, queridos lectores, un vestido puede atraer las miradas, pero es el misterio de quien lo lleva lo que permanece en la memoria.</p>
+                    </div>
+                </article>
+
+                <article class="glamour-article" id="mejores-vestidos">
+                    <header class="glamour-article-heading">
+                        <p class="glamour-category">Mejores vestidos</p>
+                        <h2>Los vestidos más memorables del Ton</h2>
+                    </header>
+                    <div class="glamour-copy">
+                        <p>Queridos lectores, en el Ton, un vestido puede decir mucho más que mil palabras. Algunos diseños acompañan transformaciones, mientras que otros se convierten en símbolos de elegancia y poder.</p>
+                    </div>
+                    <div class="dress-gallery" aria-label="Vestidos memorables de Daphne, Penelope y la reina Charlotte">
+                        <figure class="dress-card">
+                            <img src="./vestido%20daphne.jpg" alt="Daphne Bridgerton con un vestido azul">
+                            <figcaption><strong>Daphne Bridgerton</strong><span>Sus vestidos azules reflejan delicadeza y sofisticación.</span></figcaption>
+                        </figure>
+                        <figure class="dress-card">
+                            <img src="./vestido%20penelope.jpg" alt="Penelope Featherington con un vestido verde">
+                            <figcaption><strong>Penelope Featherington</strong><span>Su transformación hacia los tonos verdes acompaña su evolución y el descubrimiento de una nueva seguridad.</span></figcaption>
+                        </figure>
+                        <figure class="dress-card">
+                            <img src="./vestido%20reina%20charlote.jpg" alt="La reina Charlotte con un vestido bordado y joyas">
+                            <figcaption><strong>La reina Charlotte</strong><span>Sus vestidos extravagantes, repletos de bordados y joyas, convierten cada aparición en una demostración de poder.</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="glamour-copy">
+                        <p>Porque, estimados lectores, la moda no solo se luce: también cuenta historias.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="social-footer">
+            <a href="https://www.instagram.com/bridgertonnetflix/" aria-label="Instagram de Bridgerton">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="instagram-dot" cx="18" cy="6" r="1"></circle></svg>
+                <span>@bridgertonnetflix</span>
+            </a>
+        </footer>
+        <script src="./menu.js" defer></script>
+        <script src="./search.js" defer></script>
+    </body>
+</html>
